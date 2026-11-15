@@ -12,9 +12,19 @@ node_modules/
 # Production builds
 dist/
 build/
+*.tsbuildinfo
 
 # Testing coverage
 coverage/
 
+# Database backups & exports
+supabase/backups/
+*.dump
+*.sql.bak
+
 # Vercel deployment metadata
 .vercel/
+
+# Design reference bundles
+stitch_designs/
+
