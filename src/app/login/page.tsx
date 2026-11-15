@@ -58,9 +58,9 @@ function LoginForm() {
     }
   };
 
-  const handleQuickDemo = (demoEmail: string) => {
+  const handleQuickDemo = (demoEmail: string, demoPassword = "PasswordGate123!#") => {
     setEmail(demoEmail);
-    setPassword("CareLedger123!");
+    setPassword(demoPassword);
     setError(null);
   };
 
@@ -196,7 +196,7 @@ function LoginForm() {
           <div className="grid grid-cols-2 gap-2.5">
             <button
               type="button"
-              onClick={() => handleQuickDemo("elder.demo@careledger.org")}
+              onClick={() => handleQuickDemo("elder.a.gate@careledger.org")}
               className="py-2.5 px-3 rounded-xl border border-sky-200 bg-sky-50 hover:bg-sky-100 text-xs font-semibold text-sky-900 flex items-center justify-center gap-1.5 transition-colors"
             >
               <User className="w-3.5 h-3.5 text-sky-600" />
@@ -204,7 +204,7 @@ function LoginForm() {
             </button>
             <button
               type="button"
-              onClick={() => handleQuickDemo("caregiver.demo@careledger.org")}
+              onClick={() => handleQuickDemo("caregiver.a.gate@careledger.org")}
               className="py-2.5 px-3 rounded-xl border border-emerald-200 bg-emerald-50 hover:bg-emerald-100 text-xs font-semibold text-emerald-900 flex items-center justify-center gap-1.5 transition-colors"
             >
               <ShieldCheck className="w-3.5 h-3.5 text-emerald-600" />
